@@ -12,7 +12,7 @@ function intro() {
         document.getElementById("game").innerHTML = "Fine. I guess this game is too good for you.";
         play = false;
     }
-    var ok = function () {
+    function ok = function () {
         document.getElementById("game").innerHTML = "OK! Let's get Started.";
         play = true;
         game("<input type=\"text\" id=\"name\" placeholder=\"What is your name?\"/><button onclick=\"n()\">Enter</button>");
@@ -30,4 +30,3 @@ game("Welcome to scoutchorton's online RPG!");
 game("Want to play?");
 game("<button onclick=\"intro.no\">No</button><button onclick=\"intro.ok\">Yes</button>");
 intro();
-game("Let's play.");
