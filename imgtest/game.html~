@@ -1,0 +1,4 @@
+<h3>Hi!</h3>
+<script src="processing.js"></script> 
+<canvas data-processing-sources="imgtest.pde"></canvas>
+<h4>Game?</h4>
