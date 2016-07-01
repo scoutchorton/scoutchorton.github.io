@@ -28,6 +28,6 @@ function stat() {
 }
 game("Welcome to scoutchorton's online RPG!");
 game("Want to play?");
-game("<button onclick=\"intro.no()\">No</button><button onclick=\"intro.ok()\">Yes</button>");
+game("<button onclick=\"intro.no\">No</button><button onclick=\"intro.ok\">Yes</button>");
 intro();
 game("Let's play.");
