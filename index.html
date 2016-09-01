@@ -2,28 +2,49 @@
 <html>
     <head>
         <title>scoutchorton</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
     </head>
     <body>
-        <style>
-            .Absolute-Center {
-                width: 50%;
-                height: 50%;
-                overflow: auto;
-                margin: auto;
-                position: absolute;
-                top: 0; left: 0; bottom: 0; right: 0;
-            }
-        </style>
-        <table class="Absolute-Center">
-            <tr>
-                <td></td><td></td><td></td>
-            </tr>
-            <tr>
-                <td></td><td><img class="Absolute-Center" src="scoutcicon.png"><p class="Absolute-Center">scoutchorton's website</p></td><td></td>
-            </tr>
-            <tr>
-                <td></td><td></td><td></td>
-            </tr>
-        </table>
+        <center>
+            <table cellpadding="0">
+                <tr>
+                    <td class="navleft" onmouseover="expand(this)"><a>Home</a></td>
+                    <td rowspan="3" style="text-align: center; vertical-align: middle;"><img src="scoutcicon.png" id="face"/></td>
+                    <td class="navright"><a>Programming</a></td>
+                </tr>
+                <tr>
+                    <td class="navleft"><a>Blog</a></td>
+                    <td class="navright"><a>Weebly</a></td>
+                </tr>
+                <tr>
+                    <td class="navleft"><a>Tools</a></td>
+                    <td class="navright"><a>Help</a></td>
+                </tr>
+            </table>
+            <div class="page">
+                <br>
+                New scoutchorton website!!
+                <br>
+                <br>
+                Now, things should be here. I don't have a proper method of updating this, other than literally editing the file from my computer, so it'll be tough.
+                <br>
+                <br>
+                <br>
+                Todos:
+                <ul>
+                    <li>Start Blog layout and transfer few posts</li>
+                    <li>Add submenu to Programming</li>
+                    <li>Spruce things up a bit (make it more 2016, not 1998)</li>
+                    <li>Add personal flair (have to get that Ubuntu font!)</li>
+                    <li>Actually add pages</li>
+                </ul>
+            </div>
+        </center>
+        <div id="footer">
+            <span style="text-align: left;">Powered by github. Go make an account for free at <a href="https://github.com/">github.com</a>. Realy, go do it.</span>
+            <br>
+            <span style="text-align: right;">Nerd. Friend. Christian.<br>scoutchorton</span>
+        </div>
     </body>
 </html>
