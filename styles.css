@@ -21,7 +21,7 @@ center {
 
 #footer {
     font-family: Ubuntu Condensed;
-    border-top: 1px dashed black;
+    border-top: 1px dashed #FF6600;
     padding: 7px 3px 5px 3px;
     font-size: 12px;
     background: white;
