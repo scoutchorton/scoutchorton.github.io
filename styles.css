@@ -15,8 +15,9 @@ center {
 }
 
 #socicons > a > img {
-    width: 25px;
     height: 25px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 #footer {
