@@ -35,7 +35,7 @@ center {
 
 #navt {
     margin-top: 0;
-    width: 100px;
+    width: auto;
     height: auto;
     background: #5E2750;
     color: #E95420;
@@ -91,6 +91,7 @@ ul {
     -moz-box-sizing: border-box;
     padding: 3px;
     height: 33%;
+    width:100px;
     text-align: center;
     overflow: hidden;
 }
