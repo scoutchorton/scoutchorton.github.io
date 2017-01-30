@@ -1,3 +1,3 @@
 sudo apt-get install python-tk
 cd ~/Downloads/
-wget http://scoutchorton/grapher/
+wget http://scoutchorton.github.io/grapher/
