@@ -56,7 +56,9 @@ center {
 
 #menu {
     position: fixed;
-    margin-left: calc(-82%);
+    right: 0px;
+    left: 0px;
+    margin-left: -1079.7px;
     transition: margin 2.5s;
 }
 
