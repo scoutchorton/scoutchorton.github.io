@@ -60,6 +60,7 @@ center {
     left: 0px;
     margin-left: -1079.7px;
     transition: margin 2.5s;
+    width: auto;
 }
 
 #menu:hover {
