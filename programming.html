@@ -5,40 +5,22 @@
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
         <link rel="icon" href="scoutcicon.png" type="image/png">
+        <script>
+        function fadingin(){
+            var element = document.getElementById("navt");
+            fade(element);
+        }
+        </script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <body>
+        <div w3-include-html="nav.html"></div>
         <center>
-            <table cellpadding="0">
-                <tr>
-                    <td class="navleft" onmouseover="expand(this)"><a>Home</a></td>
-                    <td rowspan="3" style="text-align: center; vertical-align: middle;"><img src="scoutcicon.png" id="face"/></td>
-                    <td class="navright"><a>Programming</a></td>
-                </tr>
-                <tr>
-                    <td class="navleft"><a>Blog</a></td>
-                    <td class="navright"><a>Weebly</a></td>
-                </tr>
-                <tr>
-                    <td class="navleft"><a>Tools</a></td>
-                    <td class="navright"><a>Help</a></td>
-                </tr>
-            </table>
             <div class="page">
                 <br>
-                <u style="font-size: 20px;">New scoutchorton website!!</u><br>
-                <br>
-                Now, things should be here.<br>
-                I don't have a proper method of updating this, other than literally editing the file from my computer, so it'll be tough.<br>
-                <br>
-                <br>
-                Todos:
-                <ul>
-                    <li>Start Blog layout and transfer few posts</li>
-                    <li>Add submenu to Programming</li>
-                    <li>Spruce things up a bit (make it more 2016, not 1998)</li>
-                    <li>Add personal flair (have to get that Ubuntu font!)</li>
-                    <li>Actually add pages</li>
-                </ul>
+                <u style="font-size: 20px;">Programming</u><br>
+                <u style="font-size: 15px;">Projects</u><br>
+                <a href="./programming/electronegativity.html">Electronegativity Calculator</a>
             </div>
         </center>
         <div id="footer">
@@ -46,9 +28,12 @@
             <br>
             <table width="100%">
                 <tr>
-                    <td style="text-align: left;" width="33%">Nerd. Friend. Christian.</td><td id="socicons" align="center" width="33%"><a href="https://www.youtube.com/user/scoutchorton" target="_blank"><img src="yousocicon.png"></a><a href="https://github.com/scoutchorton" target="_blank"><img src="gitsocicon.png"></a><a href="https://plus.google.com/103984685841390951470" target="_blank"><img src="gooplussocicon.png"></a></td><td style="text-align: right;" width="33%">Designed and maintained by scoutchorton.</td>
+                    <td style="text-align: left;" width="33%">Nerd. Friend. Christian.</td><td id="socicons" align="center" ><a href="https://www.youtube.com/user/scoutchorton" target="_blank"><img src="yousocicon.png"></a><a href="https://github.com/scoutchorton" target="_blank"><img src="gitsocicon.png"></a><a href="https://plus.google.com/103984685841390951470" target="_blank"><img src="gooplussocicon.png"></a></td><td style="text-align: right;" width="33%">Designed and maintained by scoutchorton.</td>
                 </tr>
             </table>
         </div>
+        <script>
+            w3.includeHTML();
+        </script>
     </body>
 </html>
