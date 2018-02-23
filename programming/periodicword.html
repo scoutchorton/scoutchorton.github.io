@@ -13,13 +13,19 @@
         </script>
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="https://scoutchorton.github.io/periodic/periodic.js"></script>
+        <script>
+            function getPhrase() {
+                var phrase = document.getElementById('phrase').value;
+                alert(phrase);
+            }
+        </script>
     </head>
     <body>
         <div w3-include-html="../nav.html"></div>
         <center>
             <div class="page">
               <h3>Periodic Word Generator</h3>
-              <input type="text" placeholder="Phrase:"></input>
+              <input type="text" placeholder="Phrase" id="phrase"><button onclick="getPhrase()">Find Formula</button>
               <div id="text"><span font-color="grey">Type phrase in above.</span></div>
             </div>
         </center>
