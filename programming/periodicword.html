@@ -21,12 +21,18 @@
                 var d = false;
                 for(var i = 0; i < phrase.length; i++) {
                     console.log(typeof phrase[i]);
-                    if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) && (phrase[i+1] !== undefined) && (d === false)) {
-                        console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
-                        d = true;
-                    } else if(elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) {
+                    if(phrase[i+1] !== undefined) {
+                        if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) && (d === false)) {
+                            console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
+                            d = true;
+                        }
+                    } else if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) && (d === true)) {
                         console.log(phrase[i].toUpperCase());
+                    }
+                    if(d === true) {
                         d = false;
+                    } else {
+                        d = true;
                     }
                     //if(elems.includes(phrase[i].toUpperCase() + phrase[i+1].toLowerCase())) {
                     //   elemPhrase.append(phrase[i].toUpperCase() + phrase[i+1].toLowerCase());
