@@ -19,7 +19,8 @@
                 var elems = pSymbolLength();
                 var phrase = document.getElementById('phrase').value;
                 for(var i = 0; i < phrase.length; i++) {
-                    console.log(phrase[i].toUppercase() + phrase[i+1].toLowercase());
+                    console.log(typeof phrase[i]);
+                    console.log((phrase[i]).toUppercase() + (phrase[i+1]).toLowercase());
                     console.log(phrase[i].toUppercase());
                     //if(elems.includes(phrase[i].toUppercase() + phrase[i+1].toLowercase())) {
                     //   elemPhrase.append(phrase[i].toUppercase() + phrase[i+1].toLowercase());
