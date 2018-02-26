@@ -21,10 +21,10 @@
                 var d = false;
                 for(var i = 0; i < phrase.length; i++) {
                     console.log(typeof phrase[i]);
-                    if((elems.includes((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase())) and (phrase[i+1] !== undefined) and (d === false)) {
+                    if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) and (phrase[i+1] !== undefined) and (d === false)) {
                         console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
                         d = true;
-                    } else if(elems.includes((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase())) {
+                    } else if(elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) {
                         console.log(phrase[i].toUpperCase());
                         d = false;
                     }
