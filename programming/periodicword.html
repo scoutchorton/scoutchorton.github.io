@@ -21,6 +21,8 @@
                 var d = false;
                 for(var i = 0; i < phrase.length; i++) {
                     console.log(typeof phrase[i]);
+                    
+                    /*
                     if(phrase[i+1] !== undefined) {
                         if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) && (d === false)) {
                             console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
@@ -34,11 +36,14 @@
                     } else {
                         d = true;
                     }
-                    //if(elems.includes(phrase[i].toUpperCase() + phrase[i+1].toLowerCase())) {
-                    //   elemPhrase.append(phrase[i].toUpperCase() + phrase[i+1].toLowerCase());
-                    //} else if(elems.includes(phrase[i].toUpperCase()) {
-                    //   elemPhrase.append(phrase[i].toUpperCase());
-                    //}
+                    /*
+                    if(elems.includes(phrase[i].toUpperCase() + phrase[i+1].toLowerCase())) {
+                       elemPhrase.append(phrase[i].toUpperCase() + phrase[i+1].toLowerCase());
+                    } else if(elems.includes(phrase[i].toUpperCase()) {
+                       elemPhrase.append(phrase[i].toUpperCase());
+                    }
+                    */
+                    */
                 }
                 document.getElementById('text').innerHTML = phrase;
             }
