@@ -20,12 +20,12 @@
                 var phrase = document.getElementById('phrase').value;
                 for(var i = 0; i < phrase.length; i++) {
                     console.log(typeof phrase[i]);
-                    console.log((phrase[i]).toUppercase() + (phrase[i+1]).toLowercase());
-                    console.log(phrase[i].toUppercase());
-                    //if(elems.includes(phrase[i].toUppercase() + phrase[i+1].toLowercase())) {
-                    //   elemPhrase.append(phrase[i].toUppercase() + phrase[i+1].toLowercase());
-                    //} else if(elems.includes(phrase[i].toUppercase()) {
-                    //   elemPhrase.append(phrase[i].toUppercase());
+                    console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
+                    console.log(phrase[i].toUpperCase());
+                    //if(elems.includes(phrase[i].toUpperCase() + phrase[i+1].toLowerCase())) {
+                    //   elemPhrase.append(phrase[i].toUpperCase() + phrase[i+1].toLowerCase());
+                    //} else if(elems.includes(phrase[i].toUpperCase()) {
+                    //   elemPhrase.append(phrase[i].toUpperCase());
                     //}
                 }
                 document.getElementById('text').innerHTML = phrase;
