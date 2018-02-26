@@ -18,12 +18,16 @@
                 var elemPhrase = [];
                 var elems = pSymbolLength();
                 var phrase = document.getElementById('phrase').value;
+                var d = False;
                 for(var i = 0; i < phrase.length; i++) {
                     console.log(typeof phrase[i]);
-                    if(phrase[i+1] !== undefined) {
+                    if((elems.includes(phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase())) && (phrase[i+1] !== undefined) && (d === False)) {
                         console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
+                        d = True;
+                    } else if(elems.includes((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase())) {
+                        console.log(phrase[i].toUpperCase());
+                        d = False;
                     }
-                    console.log(phrase[i].toUpperCase());
                     //if(elems.includes(phrase[i].toUpperCase() + phrase[i+1].toLowerCase())) {
                     //   elemPhrase.append(phrase[i].toUpperCase() + phrase[i+1].toLowerCase());
                     //} else if(elems.includes(phrase[i].toUpperCase()) {
