@@ -15,8 +15,19 @@
         <script src="https://scoutchorton.github.io/periodic/periodic.js"></script>
         <script>
             function getPhrase() {
+                var elemPhrase = [];
+                var elems = pSymbolLength();
                 var phrase = document.getElementById('phrase').value;
-                alert(phrase);
+                for(var i = 0; i < phrase.length; i++) {
+                    console.log(phrase[i].toUppercase() + phrase[i+1].toLowercase());
+                    console.log(phrase[i].toUppercase());
+                    if(elems.includes(phrase[i].toUppercase() + phrase[i+1].toLowercase())){
+                       elemPhrase.append(phrase[i].toUppercase() + phrase[i+1].toLowercase());
+                    } else if(elems.includes(phrase[i].toUppercase()) {
+                       elemPhrase.append(phrase[i].toUppercase());
+                    }
+                }
+                document.getElementById('text').innerHTML = phrase;
             }
         </script>
     </head>
