@@ -21,11 +21,11 @@
                 for(var i = 0; i < phrase.length; i++) {
                     console.log(phrase[i].toUppercase() + phrase[i+1].toLowercase());
                     console.log(phrase[i].toUppercase());
-                    if(elems.includes(phrase[i].toUppercase() + phrase[i+1].toLowercase())) {
-                       elemPhrase.append(phrase[i].toUppercase() + phrase[i+1].toLowercase());
-                    } else if(elems.includes(phrase[i].toUppercase()) {
-                       elemPhrase.append(phrase[i].toUppercase());
-                    }
+                    //if(elems.includes(phrase[i].toUppercase() + phrase[i+1].toLowercase())) {
+                    //   elemPhrase.append(phrase[i].toUppercase() + phrase[i+1].toLowercase());
+                    //} else if(elems.includes(phrase[i].toUppercase()) {
+                    //   elemPhrase.append(phrase[i].toUppercase());
+                    //}
                 }
                 document.getElementById('text').innerHTML = phrase;
             }
