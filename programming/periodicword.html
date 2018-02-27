@@ -33,12 +33,12 @@
                         console.log("d = false");
                         if((dou !== false) && (elems[0].indexOf(dou) >= 0)) {
                             console.log(dou + " passed");
-                            elemPhrase.push(dou);
+                            elemPhrase = elemPhrase.push(dou);
                             d = true;
                         }
                     } else {
                         if(elems[1].indexOf(sin) >= 0) {
-                            elemPhrase.push(sin);
+                            elemPhrase = elemPhrase.push(sin);
                         }
                         d = false;
                     }
