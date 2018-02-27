@@ -33,16 +33,16 @@
                         console.log("d = false");
                         if((dou !== false) && (elems[0].indexOf(dou) >= 0)) {
                             console.log(dou + " passed");
-                            elemPhrase.append(dou);
+                            elemPhrase.push(dou);
                             d = true;
                         }
                     } else {
                         if(elems[1].indexOf(sin) >= 0) {
-                            elemPhrase.append(sin);
+                            elemPhrase.push(sin);
                         }
                         d = false;
                     }
-                    console.log("Appended to elemPhrase" + toString(elemPhrase.append(sin)));
+                    console.log("Appended to elemPhrase" + toString(elemPhrase.push(sin)));
                     console.log("elemPhrase " + toString(elemPhrase));
                 }
                 
