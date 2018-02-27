@@ -21,10 +21,10 @@
                 var d = false;
                 //Logic version 3
                 for(var i = 0; i < phrase.length; i++) {
-                    var sin = phrase[i];
+                    var sin = (phrase[i]).toUppercase();
                     console.log(sin);
                     if(phrase[i+1] !== undefined) {
-                        var dou = phrase[i] + phrase[i+1];
+                        var dou = (phrase[i]).toUppercase() + (phrase[i+1]).toLowercase();
                     } else {
                         var dou = false;
                     }
