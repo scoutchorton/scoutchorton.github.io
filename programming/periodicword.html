@@ -5,71 +5,15 @@
         <link rel="stylesheet" type="text/css" href="https://scoutchorton.github.io/styles.css" />
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
         <link rel="icon" href="https://scoutchorton.github.io/scoutcicon.png" type="image/png">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="https://scoutchorton.github.io/periodic/periodic.js"></script>
+        <script src="./periodicWord.js"></script>
+        <!--<script src="./tableGenerator.js"></script>-->
         <script>
         function fadingin(){
             var element = document.getElementById("navt");
             fade(element);
         }
-        </script>
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
-        <script src="https://scoutchorton.github.io/periodic/periodic.js"></script>
-        <script>
-            function getPhrase() {
-                var elemPhrase = [];
-                var elems = pSymbolLength();
-                var phrase = document.getElementById('phrase').value;
-                var d = false;
-                //Logic version 3
-                for(var i = 0; i < phrase.length; i++) {
-                    var sin = (phrase[i]).toUpperCase();
-                    console.log(sin);
-                    if(phrase[i+1] !== undefined) {
-                        var dou = (phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase();
-                    } else {
-                        var dou = false;
-                    }
-                    console.log(dou);
-                    if(d === false) {
-                        console.log("d = false");
-                        if((dou !== false) && (elems[0].indexOf(dou) >= 0)) {
-                            console.log(dou + " passed");
-                            elemPhrase = elemPhrase.push(dou);
-                            d = true;
-                        }
-                    } else {
-                        if(elems[1].indexOf(sin) >= 0) {
-                            elemPhrase = elemPhrase.push(sin);
-                        }
-                        d = false;
-                    }
-                    console.log("Appended to elemPhrase" + toString(elemPhrase.push(sin)));
-                    console.log("elemPhrase " + toString(elemPhrase));
-                }
-                
-                /*
-                //Logic version 2
-                if(phrase[i+1] !== undefined) {
-                    if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) && (d === false)) {
-                        console.log((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase());
-                        d = true;
-                    }
-                } else if((elems.indexOf((phrase[i]).toUpperCase() + (phrase[i+1]).toLowerCase()) >= 0) && (d === true)) {
-                    console.log(phrase[i].toUpperCase());
-                }
-                if(d === true) {
-                    d = false;
-                } else {
-                    d = true;
-                }
-                //Logic version 1
-                if(elems.includes(phrase[i].toUpperCase() + phrase[i+1].toLowerCase())) {
-                   elemPhrase.append(phrase[i].toUpperCase() + phrase[i+1].toLowerCase());
-                } else if(elems.includes(phrase[i].toUpperCase()) {
-                   elemPhrase.append(phrase[i].toUpperCase());
-                }
-                */
-                document.getElementById('text').innerHTML = phrase;
-            }
         </script>
     </head>
     <body>
