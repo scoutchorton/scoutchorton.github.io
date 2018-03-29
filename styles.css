@@ -44,3 +44,10 @@ center {
 ul {
     list-style-position: inside;
 }
+
+#menuFrame {
+    border: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
