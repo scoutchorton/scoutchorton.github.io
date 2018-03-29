@@ -1,3 +1,7 @@
+body {
+    background: none transparent;
+}
+
 #face {
     margin: 0px;
     padding: 3px;
