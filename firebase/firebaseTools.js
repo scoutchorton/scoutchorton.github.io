@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyC0q4W7LycPoJJQ7d6iluAyDxg5iNS3Jx4",
-  authDomain: "github-page-demo.firebaseapp.com",
-  databaseURL: "https://github-page-demo.firebaseio.com",
-  projectId: "github-page-demo",
-  storageBucket: "github-page-demo.appspot.com",
-  messagingSenderId: "608313227028"
+  apiKey: "AIzaSyAocY7p-bSgxenvdNJMvWwOezztANrtaQI",
+  authDomain: "scoutchortongithubio.firebaseapp.com",
+  databaseURL: "https://scoutchortongithubio.firebaseio.com",
+  projectId: "scoutchortongithubio",
+  storageBucket: "scoutchortongithubio.appspot.com",
+  messagingSenderId: "313319819423"
 };
 firebase.initializeApp(config);
 
