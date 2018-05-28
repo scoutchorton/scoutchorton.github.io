@@ -1,5 +1,5 @@
 body {
-	margin: 0px;
+    margin: 0px;
     height: 100%;
     background: #E95420;
     font-family: Ubuntu;
@@ -8,13 +8,6 @@ body {
 
 center {
     height: 100%;
-}
-
-#face {
-    margin: 0px;
-    padding: 3px;
-    height: 100px;
-    width: 10%;
 }
 
 #socicons > a > img {
@@ -33,37 +26,6 @@ center {
     margin: 0 auto;
 }
 
-#navt {
-    margin-top: 0;
-    width: auto;
-    height: auto;
-    background: #5E2750;
-    color: #E95420;
-}
-
-#navt > tbody {
-    width: 25%;
-}
-
-#navt > tbody > tr {
-    width: 25%;
-}
-
-#menuimg {
-    margin-bottom: 50%;
-    margin-left: 5px;
-}
-
-#menu {
-    position: fixed;
-    margin-left: -80%;
-    transition: margin 2.5s;
-}
-
-#menu:hover {
-    margin-left: 0%;
-    transition: margin 1s;
-}
 
 #menu > div {
     display: inline-block;
@@ -82,23 +44,9 @@ ul {
     list-style-position: inside;
 }
 
-.nav{
-    font-family: Ubuntu Condensed;
-    margin: 0px !important;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 3px;
-    height: 33%;
-    text-align: center;
-    overflow: hidden;
-}
-.navi{
-    background: #5E2750;
-    color: #E95420;
-    padding: 10px;
-}
-.navi:hover {
-    background: #E95420;
-    color: #5E2750;
+#menuFrame {
+    border: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }

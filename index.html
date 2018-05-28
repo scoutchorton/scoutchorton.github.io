@@ -11,27 +11,22 @@
             fade(element);
         }
         </script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <!-- Firebase Start -->
+        <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-messaging.js"></script>
+    <!-- Firebase End  -->
+    <!-- Firebase Scripts Start -->
+    <script src="https://scoutchorton.github.io/firebase/firebaseTools.js"></script>
+    <!-- firebase Scripts End -->
     </head>
     <body>
-        <div id="menu">
-            <div style="margin-right: 0;">
-            <table cellpadding="0" id="navt">
-                <tbody>
-                    <tr>
-                        <td id="face" style="text-align: center; vertical-align: middle;"><a     href=index.html><img src="scoutcicon.png" /></a></td>
-                        <td class="nav"><a class="navi">Photography</a></td>
-                        <td class="nav"><a class="navi">Tools</a></td>
-                        <td class="nav"><a class="navi">Blog</a></td>
-                        <td class="nav"><a class="navi">Help</a></td>
-                        <td class="nav"><a class="navi">Weebly</a></td>
-                        <td class="nav"><a class="navi" href="Modz.7z" download>Programming</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>                                                 <div>
-            <img id="menuimg" src="menu.svg" />
-            </div>
-        </div>
+        <p style="display: none;" id="fbHits"></p>
+        <iframe id="menuFrame" src="https://scoutchorton.github.io/nav.html"></iframe>
         <center>
             <div class="page" style="height: 650px;">
                 <br>
@@ -49,6 +44,8 @@
                     <li>Add personal flair (have to get that Ubuntu font!)</li>
                     <li>Actually add pages</li>
                 </ul>
+                <a href="./EnglishVocab">English Vocab page</a>
+                <!-- Click <a href="./install.sh" download>here</a> to download the Linux installer for my Python Line Grapher! -->
             </div>
         </center>
         <div id="footer">
@@ -56,9 +53,12 @@
             <br>
             <table width="100%">
                 <tr>
-                    <td style="text-align: left;" width="33%">Nerd. Friend. Christian.</td><td id="socicons" align="center" ><a href="https://www.youtube.com/user/scoutchorton" target="_blank"><img src="yousocicon.png"></a><a href="https://github.com/scoutchorton" target="_blank"><img src="gitsocicon.png"></a><a href="https://plus.google.com/103984685841390951470" target="_blank"><img src="gooplussocicon.png"></a></td><td style="text-align: right;" width="33%">Designed and maintained by scoutchorton.</td>
+                    <td style="text-align: left;" width="33%"></td><td id="socicons" align="center" ><a href="https://www.youtube.com/user/scoutchorton" target="_blank"><img src="yousocicon.png"></a><a href="https://github.com/scoutchorton" target="_blank"><img src="gitsocicon.png"></a><a href="https://plus.google.com/103984685841390951470" target="_blank"><img src="gooplussocicon.png"></a></td><td style="text-align: right;" width="33%">Designed and maintained by scoutchorton.</td>
                 </tr>
             </table>
         </div>
+        <script>
+    	    setTimeout(function(){updateHits("home"); console.log("Hits updated.");}, 2500);
+	    </script>
     </body>
 </html>
