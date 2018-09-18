@@ -29,10 +29,8 @@ window.onload=function(){
   setInterval(function(){
     let c=eId('c').getContext('2d');
     c.beginPath();
-    //Background
-    c.fillStyle="#ffffff";
-    c.fillRect(0,0,w,h);
-    c.closePath();
+    //Clear
+    c.clearRect(0,0,w,h);
     
     //Hour
     c.beginPath();
